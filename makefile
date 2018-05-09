@@ -1,5 +1,5 @@
 OBJS = pinginfoview.o
-CFLAG = -lncurses
+CFLAG = -lncurses -lpthread
 
 pinginfoview: pinginfoview.o
 	gcc ${OBJS} -o $@ ${CFLAG}
